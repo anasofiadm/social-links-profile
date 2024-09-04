@@ -1,34 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Links Card</title>
+    <link rel="stylesheet" href="styles.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <style>
+      /* General settings */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 8%); /* Grey 900 */
+    font-family: Arial, sans-serif;
+    color: hsl(0, 0%, 100%); /* White */
+}
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+/* Card container */
+.card {
+    background-color: hsl(0, 0%, 12%); /* Grey 800 */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 375px; /* Default for mobile */
+    width: 100%;
+}
+
+/* Profile image */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Name */
+.name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* Location */
+.location {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: hsl(75, 94%, 57%); /* Green */
+}
+
+/* Description */
+.description {
+    margin: 15px 0;
+    font-size: 1rem;
+    color: hsl(75, 94%, 57%); /* Green */
+}
+
+/* Social buttons */
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: hsl(0, 0%, 20%); /* Grey 700 */
+    color: hsl(0, 0%, 100%); /* White */
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 1440px) {
+    .card {
+        max-width: 400px; /* Adjust card size for larger screens */
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+    
+    .description, .location {
+        font-size: 1.2rem;
+    }
+}
+
+    </style>
 </head>
 <body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="card">
+        <img src="profile.jpg" alt="Jessica Randall" class="profile-img">
+        <h1 class="name">Jessica Randall</h1>
+        <p class="location">London, United Kingdom</p>
+        <p class="description">Front-end developer and avid reader.</p>
+        <div class="social-links">
+            <a href="#" class="button">GitHub</a>
+            <a href="#" class="button">Frontend Mentor</a>
+            <a href="#" class="button">LinkedIn</a>
+            <a href="#" class="button">Twitter</a>
+            <a href="#" class="button">Instagram</a>
+        </div>
+    </div>
 </body>
 </html>
