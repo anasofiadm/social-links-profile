@@ -1,116 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HUM-ANA-SOFIA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HUM-ANA-SOFIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-      /* General settings */
-body {
-  font-family: "Inter", sans-serif;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: hsl(0, 0%, 8%); /* Grey 900 */
-    font-family: Arial, sans-serif;
-    color: hsl(0, 0%, 100%); /* White */
-}
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Card container */
-.card {
-    background-color: hsl(0, 0%, 12%); /* Grey 800 */
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    width:25%;
-}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #a18cd1, #fbc2eb); /* purple gradient */
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #fff;
+    }
 
-/* Profile image */
-.profile-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-/* Name */
-.name {
-    font-size: 1.3rem;
-    margin: 10px 0;
-    font-weight: 800;
-}
-
-/* Location */
-.location {
-    font-size: 0.875rem;
-    margin: 5px 0;
-    color: hsl(75, 94%, 57%); /* Green */
-    font-weight: 700;
-
-}
-
-/* Description */
-.description {
-    margin: 20px 0;
-    font-size: 0.875rem;
-    color:hsl(0, 0%, 100%);
-    font-weight: 400;
-}
-
-/* Social buttons */
-.social-links {
-    display: flex;
-    flex-direction: column;
-}
-
-.button {
-    background-color: hsl(0, 0%, 20%); /* Grey 700 */
-    color: hsl(0, 0%, 100%); /* White */
-    text-decoration: none;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    font-size: 0.875rem;
-    font-weight: 700;
-}
-
-/* Responsive adjustments */
-@media (min-width: 1440px) {
     .card {
-        max-width: 400px; /* Adjust card size for larger screens */
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 30px 20px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      text-align: center;
     }
-    
-    .name {
-        font-size: 2rem;
-    }
-    
-    .description, .location {
-        font-size: 1.2rem;
-    }
-}
 
-    </style>
-</head>
-<body>
-    <div class="card">
-        <img src="./assets/images/avatar-jessica.jpeg" alt="Ana Sofia Logo" class="profile-img">
-        <h1 class="name">Ana Sofía</h1>
-        <p class="location">@humanasofia_</p>
-        <p class="description">Creadora, conectora y destructora de mundos</p>
-        <div class="social-links">
-            <a href="#" class="button">✨ Club de Meditación</a>
-            <a href="#" class="button">🔮 Lectura de Tarot</a>
-            <a href="#" class="button">🧘 Sesión de Yoga 1:1</a>
-            <a href="#" class="button">🌙 Taller de Collage Creativo (mensual)</a>
-            <a href="#" class="button">🗣️ Clases de Inglés para Creadores de Contenido Espiritual y Bienestar</a>
-            <a href="#" class="button">💻Curso Básico de Herramientas Digitales/a>
-        </div>
-    </div>
-</body>
-</html>
+    .profile-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .name
