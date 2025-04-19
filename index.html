@@ -1,29 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>HUM-ANA-SOFIA</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <style>
-    * {
-      box-sizing: border-box;
+    /* Tipografía embebida estilo Poppins-like con fallback */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
       margin: 0;
       padding: 0;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #a18cd1, #fbc2eb); /* purple gradient */
+      background: linear-gradient(135deg, #a18cd1, #fbc2eb); /* Purple gradient */
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
-      color: #fff;
+      color: #ffffff;
+      text-align: center;
     }
 
     .card {
@@ -32,19 +25,91 @@
       -webkit-backdrop-filter: blur(12px);
       border-radius: 20px;
       padding: 30px 20px;
+      width: 90%;
       max-width: 400px;
-      width: 100%;
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-      text-align: center;
     }
 
     .profile-img {
-      width: 80px;
-      height: 80px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 15px;
       border: 2px solid rgba(255, 255, 255, 0.4);
     }
 
-    .name
+    .name {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .location {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #d4ffdc;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      font-weight: 300;
+      margin-bottom: 25px;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .button {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background: rgba(255, 255, 255, 0.35);
+      color: #000;
+    }
+
+    @media (min-width: 768px) {
+      .profile-img {
+        width: 110px;
+        height: 110px;
+      }
+
+      .name {
+        font-size: 2rem;
+      }
+
+      .description {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAA..." alt="Ana Sofia Logo" class="profile-img">
+    <h1 class="name">Ana Sofía</h1>
+    <p class="location">@humanasofia_</p>
+    <p class="description">Creadora, conectora y destructora de mundos</p>
+    <div class="social-links">
+      <a href="#" class="button">✨ Club de Meditación</a>
+      <a href="#" class="button">🔮 Lectura de Tarot</a>
+      <a href="#" class="button">🧘 Sesión de Yoga 1:1</a>
+      <a href="#" class="button">🌙 Taller de Collage Creativo (mensual)</a>
+      <a href="#" class="button">🗣️ Clases de Inglés para Creadores de Contenido Espiritual y Bienestar</a>
+      <a href="#" class="button">💻 Curso Básico de Herramientas Digitales</a>
+    </div>
+  </div>
+</body>
+</html>
